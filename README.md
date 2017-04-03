@@ -1,5 +1,5 @@
 #### Goal: [Exercises Foundational Relational Database Knowledge](http://jsdev.learnersguild.org/goals/96-Foundational_Relational_Database_Exercises.html)
-#### Team: Jorge Lopez (@je-lopez) and Zubair Ahmed (@)
+#### Team: Jorge Lopez (@je-lopez) and Zubair Ahmed (@zubairnahmed)
 ---
 
 
