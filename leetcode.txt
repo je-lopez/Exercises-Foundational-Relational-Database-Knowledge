@@ -1,0 +1,81 @@
+1. 182 - Duplicate Emails:
+
+SELECT email
+FROM person
+GROUP BY email
+HAVING count(*) > 1;
+
+
+2. 175 - Combine Two Tables
+
+SELECT FirstName, LastName, City, State
+FROM person
+LEFT JOIN address ON person.personid = address.personid;
+
+
+3. 183 - Customers Who Never Order
+
+SELECT Name AS Customers
+FROM Customers
+LEFT JOIN Orders ON Customers.Id = Orders.CustomerId
+WHERE Customers.Id NOT IN (SELECT Orders.CustomerID FROM Orders);
+
+
+4. 197 - Rising Temperature
+
+SELECT a.Id 
+FROM Weather a, Weather b
+WHERE a.Temperature > b.Temperature 
+AND TO_DAYS(a.DATE)-TO_DAYS(b.DATE)=1;
+
+
+5. 196 - Delete Duplicate Emails
+
+DELETE a
+FROM Person a, Person b
+WHERE a.Email = b.Email AND
+a.Id > b.Id;
+
+
+6. 176 - Second Highest Salary
+
+SELECT max(Salary) AS SecondHighestSalary
+FROM Employee
+WHERE Salary < (SELECT max(Salary) 
+FROM Employee);
+
+
+7. 181 - Employees Earning More Than Their Managers
+
+SELECT a.Name AS Employee
+FROM Employee a, Employee b 
+WHERE a.ManagerId = b.Id AND a.Salary > b.Salary;
+
+
+8. 184 - Department Highest Salary
+
+SELECT dep.Name as Department, emp.Name as Employee, emp.Salary 
+FROM Department dep, Employee emp 
+WHERE emp.DepartmentId=dep.Id 
+AND emp.Salary=(SELECT max(Salary) FROM Employee e2 WHERE e2.DepartmentId=dep.Id)
+
+
+9. 180 - Consecutive Numbers
+
+SELECT c.num
+FROM Logs a, Logs b, Logs c
+WHERE b.num = a.num AND b.num = c.num
+AND b.id - a.id = 1 AND c.id - b.id = 1;
+
+
+10. 177 - Nth Highest Salary
+
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+  DECLARE M INT;
+  SET M=N-1;
+  RETURN (
+    SELECT DISTINCT Salary FROM Employee ORDER BY Salary DESC LIMIT 1 OFFSET M
+);
+END
+

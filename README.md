@@ -7,26 +7,26 @@ It is recommended that you complete these specs in order. The LeetCode exercises
 
 ### SQL Foundations
 
- - [ ] SQLBolt exercises completed
- 	- [ ] Solutions added to artifact repo
- - [ ] Exercises in “Tutorials: Learn SQL in stages” section on SQLZOO completed
- 	- [ ] Solutions added to artifact repo
+ - [x] SQLBolt exercises completed
+ 	- [x] Solutions added to artifact repo
+ - [x] Exercises in “Tutorials: Learn SQL in stages” section on SQLZOO completed
+ 	- [x] Solutions added to artifact repo
  
 ### SQL Foundations Practice Exercises
 
- - [ ] 10 TOTAL “Easy” and “Medium” level database challenges on LeetCode completed
- 	- [ ] Solutions added to artifact repo
+ - [x] 10 TOTAL “Easy” and “Medium” level database challenges on LeetCode completed
+ 	- [x] Solutions added to artifact repo
 
 ### Exercises to Reinforce Conceptual Knowledge
 
- - [ ] 10 Relational Algebra challenges on HackerRank completed
- 	- [ ] Solutions added to artifact repo
- - [ ] 5 Database Normalization challenges on HackerRank completed
- 	- [ ] Solutions added to artifact repo
+ - [x] 10 Relational Algebra challenges on HackerRank completed
+ 	- [x] Solutions added to artifact repo
+ - [x] 5 Database Normalization challenges on HackerRank completed
+ 	- [x] Solutions added to artifact repo
 
 ### Other
 
- - [ ] The artifact produced is properly licensed, preferably with the MIT license
+ - [x] The artifact produced is properly licensed, preferably with the MIT license
 
 ## Stretch
 
